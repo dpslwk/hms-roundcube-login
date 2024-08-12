@@ -35,4 +35,20 @@ return [
         ],
     ],
 
+    'laravelpassport' => [
+        'client_id' => env('LARAVELPASSPORT_CLIENT_ID'),
+        'client_secret' => env('LARAVELPASSPORT_CLIENT_SECRET'),
+        'redirect' => env('LARAVELPASSPORT_REDIRECT_URI'),
+        'host' => env('LARAVELPASSPORT_HOST'),
+        'userinfo_uri' => '/api/userinfo',
+        'user_id' => 'sub',
+        'user_nickname' => 'preferred_username',
+        'user_name' => 'name',
+        'user_email' => 'email',
+    ],
+
+    'roundcube' => [
+        'url' => env('ROUNDCUBE_URL'),
+    ],
+
 ];
