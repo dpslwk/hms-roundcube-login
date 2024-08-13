@@ -50,7 +50,6 @@ class AuthCallbackController extends Controller
                 $cookie->getValue(),
                 0,
                 $cookie->getPath(),
-                $cookie->getDomain(),
             );
         }
 

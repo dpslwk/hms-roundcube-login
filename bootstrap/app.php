@@ -14,6 +14,11 @@ return Application::configure(basePath: dirname(__DIR__))
         $middleware->validateCsrfTokens(except: [
             '/login-team',
         ]);
+
+        $middleware->encryptCookies(except: [
+            'roundcube_sessauth',
+            'roundcube_sessid',
+        ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //
